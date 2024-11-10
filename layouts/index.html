@@ -12,8 +12,11 @@
       <!-- Logo do Produto com Link à Direita -->
       <section class="logo-section">
         <img src="{{ .Site.Params.logo | relURL }}" alt="Logo do Produto" />
-        <a href="{{ .Site.Params.cta_link }}" class="header-link"
-          >Comprar Agora</a
+        <a
+          href="{{ .Site.Params.cta_link }}"
+          target="_blank"
+          class="header-link"
+          >{{ .Site.Params.button_texto }}</a
         >
       </section>
 
@@ -41,12 +44,22 @@
           </div>
 
           <div class="button-section">
-            <a href="{{ .Site.Params.cta_link }}" class="cta-button"
+            <a href="{{ .Site.Params.cta_link }}" class="cta-button" target="_blank"
               >{{ .Site.Params.cta_texto }}</a
             >
           </div>
         </section>
       </div>
+
+      <!-- Seção de Rodapé -->
+      <footer class="footer-section">
+        <p>&copy; 2024 <strong>meufuturo.shop</strong><br/>Todos os direitos reservados.</p>
+        <p>
+          <a href="{{ "privacy" | relURL }}">Política de Privacidade</a> |
+          <a href="{{ "terms" | relURL }}">Termos de Serviço</a>
+        </p>
+      </footer>
+      
     </main>
   </body>
 </html>

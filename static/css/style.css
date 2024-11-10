@@ -1,3 +1,18 @@
+/* Variáveis de Cores */
+:root {
+  --background-from: #1f1f1f;
+  --background-to: #182540;
+  --text-base: #dfeef3;
+  --accent-color: #4ed1c0;
+  --accent-secondary: #2e91b2;
+  --link-color: #007bff;
+  --link-hover: #0056b3;
+  --pptos-hover: #3295ff;
+  --highlight-color: #7ef37a;
+  --banner-overlay: rgba(30, 48, 119, 0.5);
+  --cta-shadow: rgba(0, 123, 255, 0.4);
+}
+
 /* Reset básico */
 *,
 *::before,
@@ -9,13 +24,27 @@
 
 /* Estilos Gerais */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   line-height: 1.6;
-  background-color: #000000;
-  color: #ffffff;
+  background: linear-gradient(
+    135deg,
+    var(--background-from),
+    var(--background-to)
+  );
+  color: var(--text-base);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Contêiner Principal */
+main {
+  width: 100%;
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
+  border-radius: 10px;
 }
 
 /* Logo com Link à Direita */
@@ -27,23 +56,24 @@ body {
 }
 
 .logo-section img {
-  max-width: 200px;
+  max-width: 100px;
 }
 
 .header-link {
-  color: #007bff;
+  color: var(--link-color);
   background-color: transparent;
   padding: 10px 20px;
   text-decoration: none;
-  border: 1px solid #007bff;
+  border: 1px solid var(--link-color);
   border-radius: 5px;
   font-size: 1rem;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s;
 }
 
 .header-link:hover {
-  background-color: #007bff;
-  color: #ffffff;
+  background-color: var(--link-color);
+  color: var(--text-base);
+  box-shadow: 0px 4px 8px var(--cta-shadow);
 }
 
 /* Banner e Conteúdo Lateral */
@@ -52,6 +82,8 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: var(--banner-overlay);
+  border-radius: 10px;
 }
 
 .banner-section {
@@ -61,6 +93,7 @@ body {
 
 .banner-section img {
   max-width: 100%;
+  border-radius: 8px;
 }
 
 .content-section {
@@ -73,7 +106,6 @@ body {
   .banner-content-wrapper {
     flex-direction: row;
     align-items: flex-start;
-    text-align: center;
   }
 
   .banner-section {
@@ -83,23 +115,28 @@ body {
 
   .content-section {
     flex: 2;
+    text-align: left;
   }
 }
 
 /* Título e Subtítulo */
 .cta-section {
-  margin: 20px 0;
+  margin: 0px 0;
 }
 
 .titulo {
-  color: #d1a84e;
-  font-size: 2.2rem;
-  margin-bottom: 10px;
+  color: var(--accent-color);
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  line-height: 120%;
 }
 
 .subtitulo {
-  color: #e0e0e0;
-  font-size: 1.2rem;
+  color: var(--text-base);
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 135%;
 }
 
 /* Disclaimer */
@@ -108,22 +145,87 @@ body {
 }
 
 .disclaimer {
-  color: #ff4c4c;
+  color: var(--highlight-color);
   font-size: 1.1rem;
+  font-weight: 500;
   margin: 5px 0;
+  line-height: 115%;
 }
 
 /* Botão CTA */
 .button-section {
   margin-top: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .cta-button {
   display: inline-block;
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
+  background: linear-gradient(135deg, var(--link-color), var(--link-hover));
+  color: var(--text-base);
+  padding: 10px 25px;
   border-radius: 5px;
   text-decoration: none;
   font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0px 4px 8px var(--cta-shadow);
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s;
+}
+
+.cta-button:hover {
+  background: linear-gradient(135deg, var(--link-hover), #003f7f);
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 12px rgba(0, 91, 179, 0.5);
+}
+
+/* Gradiente e sombra no título */
+.titulo::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    var(--accent-color),
+    var(--accent-secondary)
+  );
+  margin: 8px auto 0;
+}
+
+/* Efeitos de Transição para Elementos */
+.logo-section,
+.banner-section,
+.content-section,
+.button-section {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.logo-section:hover,
+.banner-section:hover,
+.content-section:hover,
+.button-section:hover {
+  transform: scale(1.02);
+  opacity: 0.98;
+}
+
+/* Footer Section */
+.footer-section {
+  text-align: center;
+  color: var(--text-base);
+  padding: 20px;
+  font-size: 0.9rem;
+  background-color: var(--background-to);
+  border-top: 1px solid var(--accent-secondary);
+  margin-top: 30px;
+  border-radius: 0 0 10px 10px;
+}
+
+.footer-section a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: var(--pptos-hover);
 }

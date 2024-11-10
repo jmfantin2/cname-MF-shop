@@ -14,13 +14,15 @@ sitemap:
 # Variáveis do Produto
 params: # ToDo 2
   logo: 'images/logo-produto.png'
+  button_texto: 'Comprar'
   banner: 'images/banner-produto.png' # Caminho do banner do produto/criador
-  titulo: 'Realize seu sonho de falar inglês com segurança e naturalidade'
-  subtitulo: "Com o 'Inglês 80/20' você aprende o inglês da vida real e fica fluente em poucos meses, mesmo que tenha pouco tempo pra estudar."
+  titulo: 'Lance páginas de venda atrativas e ágeis.'
+  subtitulo: "Torne-se um 'Gestor de Tráfego Esperto' e economize tempo e dinheiro com as suas campanhas de vendas. Aprenda a criar infinitas páginas de vendas com links atrativos tendo apenas um domínio."
   disclaimer:
     [
-      '❌ Não precisa de cursinho tradicional caro',
-      '❌ Não precisa sair do Brasil',
+      '– Não é necessário saber programar.',
+      '– Aprenda de forma simples com um Engenheiro de Software da PUCRS.',
+      '– Receba essa linda template reutilizável imediatamente e aprenda a editá-la no curso.',
     ]
   cta_texto: 'Acessar Site Completo'
-  cta_link: '#contato' # Link para o botão de CTA
+  cta_link: 'https://www.linkedin.com/in/jmfantin' # Link para o botão de CTA
