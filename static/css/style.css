@@ -1,0 +1,30 @@
+/* Reset básico */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #000000; /* ToDo (fundo) */
+  color: #fff; /* ToDo (texto) */
+  font-family: Arial, sans-serif"
+}
+
+a {
+  display: inline-block;
+  background-color: #007bff; /* ToDo N (accent) */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}

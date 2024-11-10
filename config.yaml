@@ -1,0 +1,26 @@
+baseURL: 'https://www.seusite.com/'
+languageCode: 'pt-br'
+title: 'Título da Página | Palavra-chave Principal' # ToDo 1
+enableRobotsTXT: true
+defaultContentLanguage: 'pt-br'
+module:
+  disable: true
+
+# Configurações para Sitemap
+sitemap:
+  changefreq: 'weekly'
+  priority: 0.8
+
+# Variáveis do Produto
+params: # ToDo 2
+  logo: 'images/logo-produto.png'
+  banner: 'images/banner-produto.png' # Caminho do banner do produto/criador
+  titulo: 'Realize seu sonho de falar inglês com segurança e naturalidade'
+  subtitulo: "Com o 'Inglês 80/20' você aprende o inglês da vida real e fica fluente em poucos meses, mesmo que tenha pouco tempo pra estudar."
+  disclaimer:
+    [
+      '❌ Não precisa de cursinho tradicional caro',
+      '❌ Não precisa sair do Brasil',
+    ]
+  cta_texto: 'Acessar Site Completo'
+  cta_link: '#contato' # Link para o botão de CTA
