@@ -1,6 +1,6 @@
-baseURL: 'https://www.gtesperto.meufuturo.shop/' # ToDo 0
+baseURL: 'https://www.gtesperto.meufuturo.shop/'
 languageCode: 'pt-br'
-title: 'Curso Gestor de Tráfego Esperto | meufuturo.shop' # ToDo 1
+title: 'Curso Gestor de Tráfego Esperto | meufuturo.shop'
 enableRobotsTXT: true
 defaultContentLanguage: 'pt-br'
 module:
@@ -11,8 +11,14 @@ sitemap:
   changefreq: 'weekly'
   priority: 0.8
 
+# SEO
+params:
+  description: 'Descubra os mistérios da Meta Description.' # Meta Description
+  keywords: 'Meta, Keywords' # Meta Keywords
+  author: 'meufuturo.shop'
+
 # Variáveis do Produto
-params: # ToDo 2
+params:
   logo: 'images/logo-produto.png'
   button_texto: 'Comprar'
   banner: 'images/banner-produto.png' # Caminho do banner do produto/criador
