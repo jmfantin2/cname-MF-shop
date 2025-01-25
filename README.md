@@ -1,1 +1,1 @@
-# PSL-meufuturo-boilerplate
+# cname-MF-shop
