@@ -11,14 +11,11 @@ sitemap:
   changefreq: 'weekly'
   priority: 0.8
 
-# SEO
+# SEO & Variáveis do Produto
 params:
   description: 'Descubra os mistérios da Meta Description.' # Meta Description
   keywords: 'Meta, Keywords' # Meta Keywords
   author: 'meufuturo.shop'
-
-# Variáveis do Produto
-params:
   logo: 'images/logo-produto.png'
   button_texto: 'Comprar'
   banner: 'images/banner-produto.png' # Caminho do banner do produto/criador
