@@ -1,4 +1,4 @@
-# Boilerplate for Sales Pages with Custom CNAME 🌐
+# Boilerplate for Sales Pages with Custom CNAME 🌐💸
 
 This project provides a ready-to-use structure for creating highly customizable sales pages, ideal for affiliates who want to showcase their products with a simple and efficient setup. With just a few modifications to the main files, you can launch professional and attractive sales experiences.
 
